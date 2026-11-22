@@ -10,7 +10,7 @@ Read it top-down: architecture and install, then Beginner, Intermediate and Adva
 
 ## How Amass v5 works
 
-&#91;embedded content: Amass v5 architecture · client, engine, database, readers\]
+![Amass v5 architecture: amass enum sends a scope to the engine, the engine queries internet sources and writes to the asset database, and the reader subcommands (subs, track, viz, assoc) query that database](amass_v5_architecture.png)
 
 The engine does all collection and is the only part that talks to the internet. Because results live in the database, you can rerun `subs`, `track`, `viz` or `assoc` any time without re-scanning.
 
